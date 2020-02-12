@@ -1720,7 +1720,7 @@ stackpos(const Arg *arg) {
 		for (n = i; c; n += ISVISIBLE(c) ? 1 : 0, c = c->next);
 		return MOD(i + GETINC(arg->i), n);
 	} else if (arg->i < 0) {
-		for(i = 0, c = selmon->clients; c; i += ISVISIBLE(c) ? 1 : 0, c = c->next);
+		for (i = 0, c = selmon->clients; c; i += ISVISIBLE(c) ? 1 : 0, c = c->next);
 		return MAX(i + arg->i, 0);
 	} else
 		return arg->i;
