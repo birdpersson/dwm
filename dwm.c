@@ -40,6 +40,7 @@
 #include <X11/extensions/Xinerama.h>
 #endif /* XINERAMA */
 #include <X11/Xft/Xft.h>
+#include <X11/XF86keysym.h>
 #include <X11/Xlib-xcb.h>
 #include <xcb/res.h>
 #ifdef __OpenBSD__
